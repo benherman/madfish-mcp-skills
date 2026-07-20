@@ -8,10 +8,10 @@ executing through the MCP's discovery meta-tools rather than just giving advice.
 ## Prerequisite
 
 You need an active **Mad Fish MCP connection** (`madfish-adops`) with the
-relevant platform licensed. Skills call the MCP's discovery meta-tools
+relevant platform licensed. Skills call the MCP's four discovery meta-tools
 (`discover_search_operations`, `discover_execute_operation`,
-`discover_list_platforms`, `discover_help`, `discover_skills`). Without the MCP
-connected, a skill can still give advice but can't act on a live account.
+`discover_list_platforms`, `discover_help`). Without the MCP connected, a skill
+can still give advice but can't act on a live account.
 
 ## Install (Claude Cowork / Claude Code)
 
@@ -20,23 +20,25 @@ Add this repo as a marketplace once, then install the packs you want:
 ```
 /plugin marketplace add benherman/madfish-mcp-skills
 /plugin install google-ads-skills@madfish-mcp-skills
+/plugin install workamajig-skills@madfish-mcp-skills
+/plugin install billcom-skills@madfish-mcp-skills
 ```
 
 Or with the skills CLI:
 
 ```
 npx skills add https://github.com/benherman/madfish-mcp-skills --skill google-ads-methodology
+npx skills add https://github.com/benherman/madfish-mcp-skills --skill workamajig-methodology
+npx skills add https://github.com/benherman/madfish-mcp-skills --skill billcom-methodology
 ```
-
-Not sure which skills apply to you? Ask your LLM **"what skills can I install?"** —
-the MCP's `discover_skills` tool returns the packs relevant to your licensed
-platforms and hands back the exact install command.
 
 ## Skills
 
 | Skill | Platform | What it does |
 |---|---|---|
 | `google-ads-methodology` | Google Ads | Account audits, keyword research, campaign build, RSA copy, bid/budget optimization, negative keywords, performance reporting. |
+| `workamajig-methodology` | Workamajig | Projects & campaigns, tasks & time, CRM, estimates & purchasing, billing & invoices, financial reports (Client/Project P&L, Trial Balance, AR/AP aging, General Ledger). |
+| `billcom-methodology` | BILL (Bill.com) | AP/AR — bills, vendors, customers, invoices, vendor credits, and recording vendor/customer payments. |
 
 _More platform packs (GA4, GTM, Meta, LinkedIn, Search Console) coming._
 
@@ -55,8 +57,3 @@ upgrade path instead of failing on a write.
   refuses ungranted operations and the skill surfaces the upgrade path.
 - Every skill confirms before writes, builds campaigns PAUSED, and reads back
   after changes. Money-affecting actions always show dollar amounts first.
-
----
-
-Made by [Mad Fish Digital](https://www.madfishdigital.com). Skills are plain
-Markdown (`SKILL.md`) — browse `skills/` to read or fork any of them.

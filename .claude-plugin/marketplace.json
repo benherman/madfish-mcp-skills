@@ -15,6 +15,24 @@
       "skills": [
         "./skills/google-ads-methodology"
       ]
+    },
+    {
+      "name": "workamajig-skills",
+      "source": "./",
+      "description": "Workamajig agency ops via the Mad Fish MCP — projects, campaigns, tasks & time, CRM, estimates & purchasing, billing & invoices, and financial reports (P&L, AR/AP, GL).",
+      "version": "0.1.0",
+      "skills": [
+        "./skills/workamajig-methodology"
+      ]
+    },
+    {
+      "name": "billcom-skills",
+      "source": "./",
+      "description": "BILL (Bill.com) AP/AR via the Mad Fish MCP — bills, vendors, customers, invoices, and recording vendor/customer payments.",
+      "version": "0.1.0",
+      "skills": [
+        "./skills/billcom-methodology"
+      ]
     }
   ]
 }
