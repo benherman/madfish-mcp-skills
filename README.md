@@ -25,7 +25,7 @@ Add this repo as a marketplace once, then install the packs you want:
 Or with the skills CLI:
 
 ```
-npx skills add https://github.com/benherman/madfish-mcp-skills --skill google-ads-manager
+npx skills add https://github.com/benherman/madfish-mcp-skills --skill google-ads-methodology
 ```
 
 Not sure which skills apply to you? Ask your LLM **"what skills can I install?"** —
@@ -36,7 +36,7 @@ platforms and hands back the exact install command.
 
 | Skill | Platform | What it does |
 |---|---|---|
-| `google-ads-manager` | Google Ads | Account audits, keyword research, campaign build, RSA copy, bid/budget optimization, negative keywords, performance reporting. |
+| `google-ads-methodology` | Google Ads | Account audits, keyword research, campaign build, RSA copy, bid/budget optimization, negative keywords, performance reporting. |
 
 _More platform packs (GA4, GTM, Meta, LinkedIn, Search Console) coming._
 
