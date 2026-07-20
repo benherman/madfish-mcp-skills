@@ -1,0 +1,20 @@
+{
+  "name": "madfish-mcp-skills",
+  "displayName": "Mad Fish MCP Skills",
+  "description": "Workflow skills for the Mad Fish MCP marketing-ops server. Each skill teaches an LLM to run real tasks against your connected ad and analytics platforms through the MCP's discovery meta-tools.",
+  "owner": {
+    "name": "Mad Fish Digital",
+    "url": "https://www.madfishdigital.com"
+  },
+  "plugins": [
+    {
+      "name": "google-ads-skills",
+      "source": "./",
+      "description": "Google Ads campaign management via the Mad Fish MCP — audits, keyword research, campaign build, RSA copy, bidding, negatives, and reporting.",
+      "version": "0.1.0",
+      "skills": [
+        "./skills/google-ads-manager"
+      ]
+    }
+  ]
+}
