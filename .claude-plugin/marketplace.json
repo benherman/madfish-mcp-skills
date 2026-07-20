@@ -13,7 +13,7 @@
       "description": "Google Ads campaign management via the Mad Fish MCP — audits, keyword research, campaign build, RSA copy, bidding, negatives, and reporting.",
       "version": "0.1.0",
       "skills": [
-        "./skills/google-ads-manager"
+        "./skills/google-ads-methodology"
       ]
     }
   ]
